@@ -12,9 +12,9 @@ export const baseOptions: BaseLayoutProps = {
     title: (
       <a href="https://freeimage.host/">
         <img
-          src="/images/esker_logo.jpg"
+          src="https://iili.io/33KBhn2.jpg"
           
-          alt='esker logo'
+          alt='33KBhn2.jpg'
           width="48"
           height="28"
           
