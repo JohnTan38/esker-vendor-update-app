@@ -1,17 +1,25 @@
 ---
-title: Components
-description: Components
+title: App features
+description: App Automation Components
 ---
 
-## Code Block
+## Example Code Block
 
-```js
-console.log('Hello World');
+```python
+def hover(driver, x_path):
+    elem_to_hover = driver.find_element(By.XPATH, x_path)
+    hover = ActionChains(driver).move_to_element(elem_to_hover)
+    hover.perform()
+	
+pyautogui.write('S2P - Vendors', interval=0.25)
 ```
 
-## Cards
+
+
+
+## Built with Next.js and Python
 
 <Cards>
   <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
+  <Card title="Read documentation on Python" href="https://docs.python.org/3/" />
 </Cards>

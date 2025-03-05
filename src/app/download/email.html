@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Request</title>
+</head>
+<body>
+    <textarea id="text">send download link .exe file</textarea>
+    <input type="button" value="Send Request Email" onclick="openOutlookEmail()">
+
+    <script type="text/javascript">
+        function openOutlookEmail() {
+            var body = document.getElementById('text').value;
+            var subject = "Request Download Link";
+            var mailto_link = 'mailto:john.tan@sh-cogent.com.sg?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            window.location.href = mailto_link;
+        }
+    </script>
+</body>
+</html>

@@ -11,15 +11,18 @@ export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <>
-        <svg
+        <img
+          src="/images/esker_logo.jpg"
+          
+          alt='esker logo'
           width="24"
           height="24"
-          xmlns="http://www.w3.org/2000/svg"
+          style={{ borderRadius: '20%' }}
           aria-label="Logo"
         >
-          <circle cx={12} cy={12} r={12} fill="currentColor" />
-        </svg>
-        My App
+          
+        </img>
+        Esker App
       </>
     ),
   },
@@ -29,5 +32,7 @@ export const baseOptions: BaseLayoutProps = {
       url: '/docs',
       active: 'nested-url',
     },
+    
   ],
 };
+

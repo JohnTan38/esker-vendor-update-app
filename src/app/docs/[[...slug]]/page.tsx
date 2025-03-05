@@ -6,6 +6,7 @@ import {
   DocsTitle,
 } from 'fumadocs-ui/page';
 import { notFound } from 'next/navigation';
+import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
 import defaultMdxComponents from 'fumadocs-ui/mdx';
 
 export default async function Page(props: {
@@ -22,11 +23,14 @@ export default async function Page(props: {
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
       <DocsBody>
-        <MDX components={{ ...defaultMdxComponents }} />
+        <MDX components={{ ...defaultMdxComponents,
+          Image: (props) => <ImageZoom {...props as any} />
+         }} />
       </DocsBody>
     </DocsPage>
   );
 }
+
 
 export async function generateStaticParams() {
   return source.generateParams();
