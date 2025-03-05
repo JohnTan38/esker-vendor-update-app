@@ -10,20 +10,21 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
-      <>
+      <a href="https://freeimage.host/">
         <img
           src="/images/esker_logo.jpg"
           
           alt='esker logo'
-          width="24"
-          height="24"
-          style={{ borderRadius: '20%' }}
-          aria-label="Logo"
-        >
+          width="48"
+          height="28"
           
-        </img>
+          aria-label="Logo"
+        />
+
         Esker App
-      </>
+        </a>
+        
+      
     ),
   },
   links: [
